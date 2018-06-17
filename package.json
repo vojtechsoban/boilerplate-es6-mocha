@@ -1,0 +1,21 @@
+{
+  "name": "boilerplate-es6-mocha",
+  "version": "1.0.0",
+  "description": "boilerplate javascript es6 + mocha",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "test": "./node_modules/.bin/mocha",
+    "retest": "./node_modules/.bin/mocha -w --recursive",
+    "build": "./node_modules/.bin/babel *.js --out-dir dist --source-maps && ./node_modules/.bin/babel ./src/*.js --out-dir dist --source-maps"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.0.15",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.0.15",
+    "chai": "^3.4.0",
+    "eslint": "^1.8.0",
+    "mocha": "^2.3.3",
+    "mocha-eslint": "^1.0.0"
+  }
+}
